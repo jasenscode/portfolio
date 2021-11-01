@@ -1,0 +1,37 @@
+@import "./_variables.scss";
+
+$header-font: "Unica One", cursive;
+$body-font: "Poppins", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: $font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid $border-color;
+}
+
+.text-accent {
+  color: rgba(255, 207, 153, 1);
+}
