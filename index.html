@@ -18,9 +18,14 @@
     <title>My Portfolio</title>
   </head>
   <body>
+
     <section class="landing sections">
         <nav class="navbar">
-          <a href="" class="navbar__hamburger">&#x2630</a>
+          <a href="#" class="navbar__hamburger">&#x2630</a>
+          <a href="#about" class="navbar__links">About</a>
+          <a href="" class="navbar__links">Skills</a>
+          <a href="" class="navbar__links">Projects</a>
+          <a href="" class="navbar__links">Contact</a>
         </nav>
         <header class="header">
           <h1 class="header__title">jasen chawda</h1>
@@ -29,67 +34,140 @@
         <div class="explore">
           <p class="explore__cta text-accent">Explore</p>
           <button class="explore__btn">
-            <a href=""><i class="fas fa-angle-down"></i></a>
+            <a href="#about"><i class="explore__btn__arrow fas fa-angle-down"></i></a>
           </button>
         </div>
     </section>
 
-    <section class="about sections">
+    <section class="about sections" id="about">
         <h2 class="about__header">about</h2>
         <div class="about__bio">
-            <p>
+            <p class="about__bio__text">
                 Hi, my name is Jasen & I’m a <span class="text-accent">junior web developer</span> from Bristol.
             </p>
-        <p>
-            I’ve just completed a 12 week developer course at <span class="text-accent">_nology</span>. I’m on the lookout for a challenging tech role, which will test my skills and help me develop them further.
-        </p>
-        <p>
-            <span class="text-accent">Scroll down</span> to see the skills I’ve learnt and the projects I’ve worked on  during my time on the course.
-        </p>
+            <p class="about__bio__text">
+                I’ve just completed a 12 week developer course at <span class="text-accent">_nology</span>. I’m on the lookout for a challenging tech role, which will test my skills and help me develop them further.
+            </p>
+            <p class="about__bio__text">
+                Write more about what I actually did on the course as time goes on. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat qui ut, obcaecati nihil expedita.
+            </p>
+            <p class="about__bio__text">
+                <span class="text-accent">Scroll down</span> to see the skills I’ve learnt and the projects I’ve worked on  during my time on the course.
+            </p>
         </div>
     </section>
 
     <section class="skills sections">
         <h2 class="skills__header">skills</h2>
-        <div class="skills__grid-container">
-            <div class="skills__grid-container__item">
-                <i class="skills__grid-container__item__icon fab fa-html5"></i>
-                <p class="skills__grid-container__item__desc">HTML</p>
+        <div class="skills__container">
+            <div class="skills__container__item">
+                <i class="skills__container__item__icon fab fa-html5"></i>
+                <p class="skills__container__item__desc">HTML</p>
             </div>
-            <div class="skills__grid-container__item">
-                <i class="skills__grid-container__item__icon fab fa-css3-alt"></i>
-                <p class="skills__grid-container__item__desc">CSS</p>
+            <div class="skills__container__item">
+                <i class="skills__container__item__icon fab fa-css3-alt"></i>
+                <p class="skills__container__item__desc">CSS</p>
             </div>
-            <div class="skills__grid-container__item">
-                <i class="skills__grid-container__item__icon fab fa-sass"></i>
-                <p class="skills__grid-container__item__desc">Sass</p>
+            <div class="skills__container__item">
+                <i class="skills__container__item__icon fab fa-sass"></i>
+                <p class="skills__container__item__desc">Sass</p>
             </div>
-            <div class="skills__grid-container__item">
-                <i class="skills__grid-container__item__icon fab fa-js"></i>
-                <p class="skills__grid-container__item__desc">JavaScript</p>
+            <div class="skills__container__item">
+                <i class="skills__container__item__icon fab fa-js"></i>
+                <p class="skills__container__item__desc">JavaScript</p>
             </div>
-            <div class="skills__grid-container__item">
-                <i class="skills__grid-container__item__icon fab fa-react"></i>
-                <p class="skills__grid-container__item__desc">React</p>
+            <div class="skills__container__item">
+                <i class="skills__container__item__icon fab fa-react"></i>
+                <p class="skills__container__item__desc">React</p>
             </div>
-            <div class="skills__grid-container__item">
-                <i class="skills__grid-container__item__icon fab fa-java"></i>
-                <p class="skills__grid-container__item__desc">Java</p>
+            <div class="skills__container__item">
+                <i class="skills__container__item__icon fab fa-java"></i>
+                <p class="skills__container__item__desc">Java</p>
             </div>
-            <div class="skills__grid-container__item">
-                <i class="skills__grid-container__item__icon fab fa-react"></i>
-                <p class="skills__grid-container__item__desc">React</p>
+            <div class="skills__container__item">
+                <i class="skills__container__item__icon fab fa-bootstrap"></i>
+                <p class="skills__container__item__desc">Bootstrap</p>
             </div>
-            <div class="skills__grid-container__item">
-                <i class="skills__grid-container__item__icon fab fa-react"></i>
-                <p class="skills__grid-container__item__desc">React</p>
+            <div class="skills__container__item">
+                <i class="skills__container__item__icon fab fa-react"></i>
+                <p class="skills__container__item__desc">React</p>
             </div>
         </div>
     </section>
-
+    
     <section class="projects sections">
         <h2 class="projects__header">projects</h2>
-        <p><span class="text-accent">Tap a project</span> to find out more</p>
+        <p class="projects__cta"><span class="text-accent">Tap a project</span> to find out more</p>
+        
+        <div class="projects__card-container">
+            <div class="projects__card">
+                <div class="projects__card__pic"></div>
+                <div class="projects__card__info">
+                    <div class="projects__card__info__stack">
+                        <i class="projects__card__info__stack__icon fab fa-react"></i>
+                        <i class="projects__card__info__stack__icon fab fa-bootstrap"></i>
+                    </div>
+                    <p class="projects__card__info__desc">
+                        project name
+                    </p>
+                </div>
+            </div>
+            <div class="projects__card">
+                <div class="projects__card__pic"></div>
+                <div class="projects__card__info">
+                    <div class="projects__card__info__stack">
+                        <i class="projects__card__info__stack__icon fab fa-react"></i>
+                        <i class="projects__card__info__stack__icon fab fa-bootstrap"></i>
+                    </div>
+                    <p class="projects__card__info__desc">
+                        project name
+                    </p>
+                </div>
+            </div>
+            <div class="projects__card">
+                <div class="projects__card__pic"></div>
+                <div class="projects__card__info">
+                    <div class="projects__card__info__stack">
+                        <i class="projects__card__info__stack__icon fab fa-react"></i>
+                        <i class="projects__card__info__stack__icon fab fa-bootstrap"></i>
+                    </div>
+                    <p class="projects__card__info__desc">
+                        project name
+                    </p>
+                </div>
+            </div>
+            <div class="projects__card">
+                <div class="projects__card__pic"></div>
+                <div class="projects__card__info">
+                    <div class="projects__card__info__stack">
+                        <i class="projects__card__info__stack__icon fab fa-react"></i>
+                        <i class="projects__card__info__stack__icon fab fa-bootstrap"></i>
+                    </div>
+                    <p class="projects__card__info__desc">
+                        project name
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="contact sections">
+        <div class="contact__method">
+            <a href="" class="contact__method__link"><i class="contact__method__icon fab fa-github"></i></a>
+            <p class="contact__method__label">Github</p>
+        </div>
+        <div class="contact__method">
+            <a href="" class="contact__method__link"><i class="contact__method__icon fab fa-linkedin"></i></a>
+            <p class="contact__method__label">LinkedIn</p>
+        </div>
+        <div class="contact__method">
+            <a href="" class="contact__method__link"><i class="contact__method__icon fas fa-file-alt"></i></a>
+            <p class="contact__method__label">CV</p>
+        </div>
     </section>
+
+    <footer class="footer">
+        <p class="footer__info">&copy; 2021 Jasen Chawda</p>
+    </footer>
   </body>
 </html>

@@ -35,3 +35,9 @@ h2 {
 .text-accent {
   color: rgba(255, 207, 153, 1);
 }
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 3.8rem;
+  }
+}
