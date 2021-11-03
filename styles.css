@@ -51,8 +51,8 @@ h2 {
   padding: 25px 15px;
 }
 .projects__card__pic {
-  width: 170px;
-  height: 170px;
+  width: 75%;
+  height: 190px;
   background-color: #202023;
   margin-bottom: 25px;
   border-radius: 15px;
@@ -67,6 +67,7 @@ h2 {
   border: 3px solid #e53d00;
   border-radius: 5px;
   padding: 10px;
+  width: 60%;
 }
 .projects__card__info__stack {
   font-size: 2rem;
@@ -94,29 +95,68 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.landing {
-  height: 100vh;
+.landing,
+.skills {
+  min-height: 100vh;
 }
 
 .sections {
   padding: 20px;
 }
 
-.navbar {
+.navbar__menu {
+  position: fixed;
+  clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 100%);
+  transform: translateY(-100%);
+  transition: transform 0.6s;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 20px;
+  background-color: #ffcf99;
+  list-style-type: none;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+.navbar__menu > li {
+  margin-bottom: 50px;
+}
+.navbar__menu__item {
+  color: #202023;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 .navbar__hamburger {
-  font-size: 3rem;
   text-decoration: none;
-  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #202023;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  margin: 25px;
+  z-index: 101;
 }
-.navbar__links {
+.navbar__hamburger .closeIcon {
   display: none;
+  padding: 4px 10px;
+  font-size: 2.4rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar__hamburger .menuIcon {
+  padding: 7px 10px;
+  font-size: 2.3rem;
+  background-color: #ffcf99;
+  border-radius: 50%;
 }
 
-.header {
-  height: 60vh;
+.showMenu {
+  transform: translateY(0);
+}
+
+.landing__header {
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,13 +164,13 @@ body {
   padding-bottom: 70px;
   align-items: center;
 }
-.header__title {
+.landing__header__title {
   font-size: 4rem;
   font-weight: 400;
   text-align: center;
   margin-bottom: 40px;
 }
-.header__desc {
+.landing__header__desc {
   font-size: 2.25rem;
   text-align: center;
 }
@@ -175,8 +215,10 @@ body {
 }
 .about__bio__text {
   text-align: center;
-  line-height: 2.5rem;
-  margin-bottom: 20px;
+  line-height: 2.2rem;
+}
+.about__bio__text:not(:last-of-type) {
+  margin-bottom: 40px;
 }
 
 .skills__header {
@@ -194,7 +236,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .skills__container__item__icon {
   font-size: 3.5rem;
@@ -257,24 +299,39 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .navbar {
-    margin-top: 50px;
+  .navbar__menu > li {
+    margin-bottom: 50px;
+  }
+  .navbar__menu__item {
+    color: #202023;
+    text-decoration: none;
+    font-size: 1.8rem;
   }
   .navbar__hamburger {
-    font-size: 4rem;
+    margin: 50px;
+  }
+  .navbar__hamburger .closeIcon {
+    padding: 4px 10px;
+    font-size: 2.8rem;
+  }
+  .navbar__hamburger .menuIcon {
+    padding: 7px 10px;
+    font-size: 2.8rem;
   }
 
-  .header__title {
-    font-size: 5rem;
+  .landing__header {
+    padding-bottom: 0px;
   }
-  .header__desc {
-    font-size: 2.8125rem;
+  .landing__header__title {
+    font-size: 4.5rem;
   }
-
-  .explore__cta {
+  .landing__header__desc {
+    font-size: 2.5rem;
+  }
+  .landing .explore__cta {
     font-size: 2rem;
   }
-  .explore__btn .fa-angle-down {
+  .landing .explore__btn .fa-angle-down {
     font-size: 2rem;
   }
 
@@ -294,7 +351,14 @@ body {
     font-size: 1.3rem;
   }
   .projects__card {
-    width: 70%;
+    width: 80%;
+  }
+  .projects__card__pic {
+    width: 50%;
+    height: 240px;
+  }
+  .projects__card__info {
+    width: 50%;
   }
   .projects__card__info__stack__icon {
     font-size: 2.5rem;
@@ -305,26 +369,5 @@ body {
   }
   .contact__method__label {
     font-size: 1.2rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .navbar {
-    justify-content: space-around;
-    width: 50%;
-    margin: 70px auto 0px auto;
-    padding: 5px 40px;
-    background-color: rgba(75, 75, 75, 0.25);
-    border-radius: 50px;
-  }
-  .navbar__hamburger {
-    display: none;
-  }
-  .navbar__links {
-    display: inline;
-    text-decoration: none;
-  }
-  .navbar__links:hover {
-    color: #ffcf99;
-    transition: 0.2s;
   }
 }
