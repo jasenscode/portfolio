@@ -154,7 +154,7 @@ body {
   &__header {
     width: 50%;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
   &__container {
     display: flex;
@@ -209,27 +209,51 @@ body {
 // }
 
 .contact {
-  background-color: $accent-color;
+  background-color: $body-color;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 20vh;
   margin-top: 50px;
+  box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
   &__method {
     display: flex;
     flex-direction: column;
     align-items: center;
     &__link {
       font-size: 2.7rem;
-      color: $body-color;
+      color: $accent-color;
     }
     &__label {
       font-size: 0.938rem;
       font-weight: 600;
-      color: $body-color;
+      color: $accent-color;
     }
   }
 }
+
+// .contact {
+//   background-color: $accent-color;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   height: 20vh;
+//   margin-top: 50px;
+//   &__method {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     &__link {
+//       font-size: 2.7rem;
+//       color: $body-color;
+//     }
+//     &__label {
+//       font-size: 0.938rem;
+//       font-weight: 600;
+//       color: $body-color;
+//     }
+//   }
+// }
 
 .footer {
   background-color: $accent-color;
@@ -346,120 +370,173 @@ body {
 
 @media screen and (min-width: 1024px) {
   .navbar {
-    justify-content: space-around;
-    width: 50%;
-    margin: 70px auto 0px auto;
-    padding: 5px 40px;
-    background-color: $nav-background;
-    border-radius: 50px;
-    // &__hamburger {
-    //   display: none;
-    // }
-  }
-}
-
-.about {
-  min-height: 75vh;
-  &__bio__text {
-    padding-left: 25%;
-    padding-right: 25%;
-    text-align: center;
-    line-height: 2.2rem;
-    &:first-of-type {
-      padding-top: 50px;
-    }
-  }
-}
-
-.skills {
-  min-height: 80vh;
-  &__header {
-    width: 50%;
-    margin: auto;
-    margin-bottom: 60px;
-  }
-  &__container {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 50vh;
-    padding-left: 20%;
-    padding-right: 20%;
-    &__item {
-      width: 25%;
-      margin-bottom: 0px;
-      &__icon {
-        font-size: 5rem;
-        margin-bottom: 40px;
+    &__menu {
+      justify-content: space-evenly;
+      width: 50%;
+      height: auto;
+      margin: 70px auto 0px auto;
+      padding: 5px 40px;
+      background-color: $nav-background;
+      border-radius: 50px;
+      transform: translateY(0);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: $nav-background;
+      clip-path: none;
+      flex-direction: row;
+      & > li {
+        margin-bottom: 0px;
+      }
+      &__item {
+        color: $font-color;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-bottom: 0px;
         &:hover {
-          transform: scale(1.8);
+          color: $accent-color;
           transition: 0.3s;
         }
       }
-      // &__desc {
-      //   font-size: 1.2rem;
-      // }
+    }
+    &__hamburger {
+      display: none;
     }
   }
-}
 
-.projects {
-  &__card-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  .about {
+    min-height: 75vh;
+    &__bio__text {
+      padding-left: 25%;
+      padding-right: 25%;
+      text-align: center;
+      line-height: 2.2rem;
+      &:first-of-type {
+        padding-top: 50px;
+      }
+    }
   }
-  &__card {
-    width: 26%;
-    &:hover {
-      box-shadow: none;
-      transition: 0.3s;
-    }
-    &__pic {
-      width: 60%;
-      height: 240px;
-    }
-    &__info {
+
+  .skills {
+    min-height: 80vh;
+    &__header {
       width: 50%;
-      &__stack__icon {
-        font-size: 2.5rem;
+      margin: auto;
+      margin-bottom: 60px;
+    }
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 50vh;
+      padding-left: 20%;
+      padding-right: 20%;
+      &__item {
+        width: 25%;
+        margin-bottom: 0px;
+        &__icon {
+          font-size: 5rem;
+          margin-bottom: 40px;
+          &:hover {
+            transform: scale(1.8);
+            transition: 0.3s;
+          }
+        }
+        // &__desc {
+        //   font-size: 1.2rem;
+        // }
+      }
+    }
+  }
+
+  .projects {
+    &__card-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__card {
+      width: 26%;
+      &:hover {
+        box-shadow: 0px 10px 13px -10px $accent-color,
+          1px 9px 13px 4px rgba(0, 0, 0, 0.33);
+        transition: 0.3s;
+      }
+      &__pic {
+        width: 60%;
+        height: 240px;
+      }
+      &__info {
+        width: 50%;
+        &__stack__icon {
+          font-size: 2.5rem;
+        }
       }
     }
   }
 }
-// @media screen and (min-width: 1024px) {
-//   .navbar {
-//     justify-content: space-around;
-//     width: 50%;
-//     margin: 70px auto 0px auto;
-//     padding: 5px 40px;
-//     background-color: $nav-background;
-//     border-radius: 50px;
-//     &__hamburger {
-//       display: none;
-//     }
-//     &__links {
-//       display: inline;
-//       text-decoration: none;
-//       &:hover {
-//         color: $accent-color;
-//         transition: 0.2s;
-//       }
-//     }
-//   }
 
-//   .about {
-//     // make width smaller
-//   }
+@media screen and (min-width: 1440px) {
+  .landing {
+    &__header {
+      padding-top: 120px;
+      &__title {
+        font-size: 6rem;
+      }
+      &__desc {
+        font-size: 3.5rem;
+      }
+    }
+    .explore {
+      &__cta {
+        font-size: 2.3rem;
+      }
+      &__btn {
+        .fa-angle-down {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  .about {
+    &__header {
+      margin-bottom: 100px;
+    }
+    min-height: 60vh;
+    &__bio__text {
+      padding-left: 25%;
+      padding-right: 25%;
+      text-align: center;
+      line-height: 2.2rem;
+      &:first-of-type {
+        padding-top: 50px;
+      }
+    }
+  }
 
-//   .skills {
-//     //add hover scale on skills icons here
-//     // also make width smaller
-//   }
-// }
-
-// display: flex;
-// justify-content: center;
-// background-color: $nav-background;
-// width: 25%;
-// margin: auto;
-// border-radius: 5px;
+  .projects {
+    &__card-container {
+      justify-content: space-between;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+    &__card {
+      width: 30%;
+      &:hover {
+        box-shadow: 0px 10px 13px -10px $accent-color,
+          1px 9px 13px 4px rgba(0, 0, 0, 0.33);
+        transition: 0.3s;
+      }
+      &__pic {
+        width: 60%;
+        height: 300px;
+      }
+      &__info {
+        width: 50%;
+        &__stack__icon {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
