@@ -1,7 +1,6 @@
 @import './_variables.scss';
 
 .projects__card {
-  width: 90%;
   background: linear-gradient(
       25deg,
       #202023 40%,
@@ -24,7 +23,6 @@
   background-size: 3em 3em;
   background-color: #202023;
   opacity: 1;
-  // background-color: $accent-color;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -32,6 +30,7 @@
   align-items: center;
   margin: 25px 0px;
   padding: 25px 15px;
+  box-shadow: 0px 10px 13px -10px #000000, 1px 9px 13px 4px rgba(0, 0, 0, 0.33);
   &__pic {
     width: 75%;
     height: 190px;
@@ -48,9 +47,11 @@
     align-items: center;
     background-color: $body-color;
     border: 3px solid $border-color;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 10px;
+    margin-bottom: 25px;
     width: 60%;
+    font-family: 'Poppins', sans-serif;
     &__stack {
       font-size: 2rem;
       margin-bottom: 10px;
@@ -60,6 +61,30 @@
       color: $accent-color;
       font-weight: 600;
       font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+  &__detail {
+    background-color: $accent-color;
+    color: $body-font;
+    border-radius: 15px;
+    padding: 15px;
+    &__text {
+      color: $body-color;
+      font-size: 1rem;
     }
   }
 }
+
+// <div class="projects__card">
+//   <div class="projects__card__pic"></div>
+//   <div class="projects__card__info">
+//     <div class="projects__card__info__stack">
+//       <i class="projects__card__info__stack__icon"></i>
+//     </div>
+//     <p class="projects__card__info__desc">Something Else</p>
+//   </div>
+//   <div class="projects__card__detail">
+//     <p class="projects__card__detail__text"></p>
+//   </div>
+// </div>
