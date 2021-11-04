@@ -37,7 +37,6 @@ h2 {
   }
 }
 .projects__card {
-  width: 90%;
   background: linear-gradient(25deg, #202023 40%, transparent 41%, transparent 59%, #202023 60%), linear-gradient(90deg, transparent 45%, #ffcf99 45%, #ffcf99 55%, transparent 55%, transparent 20%, #ffcf99 20%, #ffcf99 30%, transparent 30%), linear-gradient(90deg, #ffcf99 9%, transparent 10%);
   background-size: 3em 3em;
   background-color: #202023;
@@ -49,6 +48,7 @@ h2 {
   align-items: center;
   margin: 25px 0px;
   padding: 25px 15px;
+  box-shadow: 0px 10px 13px -10px #000000, 1px 9px 13px 4px rgba(0, 0, 0, 0.33);
 }
 .projects__card__pic {
   width: 75%;
@@ -65,9 +65,11 @@ h2 {
   align-items: center;
   background-color: #202023;
   border: 3px solid #e53d00;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 10px;
+  margin-bottom: 25px;
   width: 60%;
+  font-family: "Poppins", sans-serif;
 }
 .projects__card__info__stack {
   font-size: 2rem;
@@ -78,6 +80,17 @@ h2 {
   color: #ffcf99;
   font-weight: 600;
   font-size: 1.2rem;
+  text-align: center;
+}
+.projects__card__detail {
+  background-color: #ffcf99;
+  color: "Poppins", sans-serif;
+  border-radius: 15px;
+  padding: 15px;
+}
+.projects__card__detail__text {
+  color: #202023;
+  font-size: 1rem;
 }
 
 * {
@@ -96,7 +109,8 @@ body {
 }
 
 .landing,
-.skills {
+.skills,
+.projects {
   min-height: 100vh;
 }
 
@@ -140,12 +154,12 @@ body {
 }
 .navbar__hamburger .closeIcon {
   display: none;
-  padding: 4px 10px;
-  font-size: 2.4rem;
+  padding: 10px 16px;
+  font-size: 2.8rem;
   background-color: rgba(0, 0, 0, 0);
 }
 .navbar__hamburger .menuIcon {
-  padding: 7px 10px;
+  padding: 12px 15px;
   font-size: 2.3rem;
   background-color: #ffcf99;
   border-radius: 50%;
@@ -156,7 +170,7 @@ body {
 }
 
 .landing__header {
-  height: 75vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,6 +196,7 @@ body {
   align-items: center;
   height: 20vh;
   background-color: #202023;
+  padding-bottom: 50px;
 }
 .explore__cta {
   font-size: 1.75rem;
@@ -229,14 +244,15 @@ body {
 .skills__container {
   display: flex;
   flex-wrap: wrap;
+  min-height: 80vh;
 }
 .skills__container__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 .skills__container__item__icon {
   font-size: 3.5rem;
@@ -260,6 +276,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.projects__card {
+  width: 90%;
 }
 
 .contact {
@@ -311,12 +330,10 @@ body {
     margin: 50px;
   }
   .navbar__hamburger .closeIcon {
-    padding: 4px 10px;
-    font-size: 2.8rem;
+    font-size: 3.5rem;
   }
   .navbar__hamburger .menuIcon {
-    padding: 7px 10px;
-    font-size: 2.8rem;
+    font-size: 3.5rem;
   }
 
   .landing__header {
@@ -343,6 +360,9 @@ body {
     font-size: 1.3rem;
   }
 
+  .skills__container__item {
+    margin-bottom: 50px;
+  }
   .skills__container__item__icon {
     font-size: 5.5rem;
   }
@@ -350,15 +370,20 @@ body {
   .projects__cta {
     font-size: 1.3rem;
   }
+  .projects__card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
   .projects__card {
-    width: 80%;
+    width: 40%;
   }
   .projects__card__pic {
-    width: 50%;
+    width: 70%;
     height: 240px;
   }
   .projects__card__info {
-    width: 50%;
+    width: 70%;
   }
   .projects__card__info__stack__icon {
     font-size: 2.5rem;
@@ -370,4 +395,77 @@ body {
   .contact__method__label {
     font-size: 1.2rem;
   }
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+    justify-content: space-around;
+    width: 50%;
+    margin: 70px auto 0px auto;
+    padding: 5px 40px;
+    background-color: rgba(75, 75, 75, 0.25);
+    border-radius: 50px;
+  }
+}
+.about {
+  min-height: 75vh;
+}
+.about__bio__text {
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  line-height: 2.2rem;
+}
+.about__bio__text:first-of-type {
+  padding-top: 50px;
+}
+
+.skills {
+  min-height: 80vh;
+}
+.skills__header {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.skills__container__item {
+  width: 25%;
+  margin-bottom: 0px;
+}
+.skills__container__item__icon {
+  font-size: 5rem;
+  margin-bottom: 40px;
+}
+.skills__container__item__icon:hover {
+  transform: scale(1.8);
+  transition: 0.3s;
+}
+
+.projects__card-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.projects__card {
+  width: 26%;
+}
+.projects__card:hover {
+  box-shadow: none;
+  transition: 0.3s;
+}
+.projects__card__pic {
+  width: 60%;
+  height: 240px;
+}
+.projects__card__info {
+  width: 50%;
+}
+.projects__card__info__stack__icon {
+  font-size: 2.5rem;
 }

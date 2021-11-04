@@ -18,7 +18,8 @@ body {
 }
 
 .landing,
-.skills {
+.skills,
+.projects {
   min-height: 100vh;
 }
 
@@ -27,12 +28,6 @@ body {
 }
 
 .navbar {
-  // display: flex;
-  // justify-content: center;
-  // background-color: $nav-background;
-  // width: 25%;
-  // margin: auto;
-  // border-radius: 5px;
   &__menu {
     position: fixed;
     clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 100%);
@@ -59,7 +54,6 @@ body {
   }
   &__hamburger {
     text-decoration: none;
-    // background-color: $accent-color;
     background-color: rgba(0, 0, 0, 0);
     color: $body-color;
     border-radius: 50%;
@@ -69,12 +63,12 @@ body {
     z-index: 101;
     & .closeIcon {
       display: none;
-      padding: 4px 10px;
-      font-size: 2.4rem;
+      padding: 10px 16px;
+      font-size: 2.8rem;
       background-color: rgba(0, 0, 0, 0);
     }
     & .menuIcon {
-      padding: 7px 10px;
+      padding: 12px 15px;
       font-size: 2.3rem;
       background-color: $accent-color;
       border-radius: 50%;
@@ -87,7 +81,7 @@ body {
 }
 
 .landing__header {
-  height: 75vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,6 +107,7 @@ body {
   align-items: center;
   height: 20vh;
   background-color: $body-color;
+  padding-bottom: 50px;
   &__cta {
     font-size: 1.75rem;
     margin-bottom: 10px;
@@ -164,13 +159,14 @@ body {
   &__container {
     display: flex;
     flex-wrap: wrap;
+    min-height: 80vh;
     &__item {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       width: 50%;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       &__icon {
         font-size: 3.5rem;
         color: $accent-color;
@@ -198,7 +194,19 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  &__card {
+    width: 90%;
+  }
 }
+
+// USE FOREACH JS LOOP TO SHOW/HIDE THE INFO ON CLICK
+
+// .projects {
+//   &__card__pic,
+//   &__card__detail {
+//     display: none;
+//   }
+// }
 
 .contact {
   background-color: $accent-color;
@@ -253,12 +261,12 @@ body {
     &__hamburger {
       margin: 50px;
       & .closeIcon {
-        padding: 4px 10px;
-        font-size: 2.8rem;
+        // padding: 4px 10px;
+        font-size: 3.5rem;
       }
       & .menuIcon {
-        padding: 7px 10px;
-        font-size: 2.8rem;
+        // padding: 7px 10px;
+        font-size: 3.5rem;
       }
     }
   }
@@ -296,6 +304,7 @@ body {
   }
 
   .skills__container__item {
+    margin-bottom: 50px;
     &__icon {
       font-size: 5.5rem;
     }
@@ -305,14 +314,19 @@ body {
     &__cta {
       font-size: 1.3rem;
     }
+    &__card-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
     &__card {
-      width: 80%;
+      width: 40%;
       &__pic {
-        width: 50%;
+        width: 70%;
         height: 240px;
       }
       &__info {
-        width: 50%;
+        width: 70%;
         &__stack__icon {
           font-size: 2.5rem;
         }
@@ -330,6 +344,88 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .navbar {
+    justify-content: space-around;
+    width: 50%;
+    margin: 70px auto 0px auto;
+    padding: 5px 40px;
+    background-color: $nav-background;
+    border-radius: 50px;
+    // &__hamburger {
+    //   display: none;
+    // }
+  }
+}
+
+.about {
+  min-height: 75vh;
+  &__bio__text {
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+    line-height: 2.2rem;
+    &:first-of-type {
+      padding-top: 50px;
+    }
+  }
+}
+
+.skills {
+  min-height: 80vh;
+  &__header {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    &__item {
+      width: 25%;
+      margin-bottom: 0px;
+      &__icon {
+        font-size: 5rem;
+        margin-bottom: 40px;
+        &:hover {
+          transform: scale(1.8);
+          transition: 0.3s;
+        }
+      }
+      // &__desc {
+      //   font-size: 1.2rem;
+      // }
+    }
+  }
+}
+
+.projects {
+  &__card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__card {
+    width: 26%;
+    &:hover {
+      box-shadow: none;
+      transition: 0.3s;
+    }
+    &__pic {
+      width: 60%;
+      height: 240px;
+    }
+    &__info {
+      width: 50%;
+      &__stack__icon {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
 // @media screen and (min-width: 1024px) {
 //   .navbar {
 //     justify-content: space-around;
@@ -360,3 +456,10 @@ body {
 //     // also make width smaller
 //   }
 // }
+
+// display: flex;
+// justify-content: center;
+// background-color: $nav-background;
+// width: 25%;
+// margin: auto;
+// border-radius: 5px;

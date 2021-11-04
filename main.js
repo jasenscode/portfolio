@@ -1,6 +1,6 @@
 'use strict';
 
-// hamburger menu effect
+// hamburger slide down menu effect
 
 const menu = document.querySelector('.navbar__menu');
 const menuItems = document.querySelectorAll('.navbar__menu__item');
@@ -8,7 +8,7 @@ const hamburger = document.querySelector('.navbar__hamburger');
 const menuIcon = document.querySelector('.menuIcon');
 const closeIcon = document.querySelector('.closeIcon');
 
-hamburger.addEventListener('click', function () {
+hamburger.addEventListener('click', () => {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
     closeIcon.style.display = 'none';
@@ -20,20 +20,25 @@ hamburger.addEventListener('click', function () {
   }
 });
 
-// translate hamburger icons
+// toggle display on project card information on mobile/tablet
 
-// hamburger.addEventListener('click', function () {
-//   if (menu.classList.contains('showMenu')) {
-//     menu.classList.remove('showMenu');
-//     closeIcon.style.display = 'translateY(-150%)';
-//     menuIcon.style.transform = 'translateX(0)';
-//     closeIcon.style.display = 'none';
-//     menuIcon.style.display = 'block';
+const projectCard = document.querySelectorAll('.projects__card');
+const cardPic = document.querySelector('.projects__card__pic');
+const cardDetail = document.querySelector('.projects__card__detail');
+
+// projectCard.addEventListener('click', () => {
+//   if (
+//     cardPic.classList.contains('showCard') &&
+//     cardDetail.classList.contains('showCard')
+//   ) {
+//     cardPic.classList.remove('showCard');
+//     cardDetail.classList.remove('showCard');
+//     cardPic.style.display = 'none';
+//     cardDetail.style.display = 'none';
 //   } else {
-//     menu.classList.add('showMenu');
-//     closeIcon.style.transform = 'translateY(0)';
-//     menuIcon.style.transform = 'translateX(-150%)';
-//     closeIcon.style.display = 'block';
-//     menuIcon.style.display = 'none';
+//     cardPic.classList.add('showCard');
+//     cardDetail.classList.add('showCard');
+//     cardPic.style.display = 'block';
+//     cardDetail.style.display = 'block';
 //   }
 // });
