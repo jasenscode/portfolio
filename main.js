@@ -8,7 +8,7 @@ const hamburger = document.querySelector('.navbar__hamburger');
 const menuIcon = document.querySelector('.menuIcon');
 const closeIcon = document.querySelector('.closeIcon');
 
-hamburger.addEventListener('click', () => {
+const changeMenuState = () => {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
     closeIcon.style.display = 'none';
@@ -18,27 +18,17 @@ hamburger.addEventListener('click', () => {
     closeIcon.style.display = 'block';
     menuIcon.style.display = 'none';
   }
+};
+
+hamburger.addEventListener('click', changeMenuState);
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', changeMenuState);
 });
 
-// toggle display on project card information on mobile/tablet
+// add date to footer
 
-const projectCard = document.querySelectorAll('.projects__card');
-const cardPic = document.querySelector('.projects__card__pic');
-const cardDetail = document.querySelector('.projects__card__detail');
+const date = new Date();
+const currentYear = date.getFullYear();
 
-// projectCard.addEventListener('click', () => {
-//   if (
-//     cardPic.classList.contains('showCard') &&
-//     cardDetail.classList.contains('showCard')
-//   ) {
-//     cardPic.classList.remove('showCard');
-//     cardDetail.classList.remove('showCard');
-//     cardPic.style.display = 'none';
-//     cardDetail.style.display = 'none';
-//   } else {
-//     cardPic.classList.add('showCard');
-//     cardDetail.classList.add('showCard');
-//     cardPic.style.display = 'block';
-//     cardDetail.style.display = 'block';
-//   }
-// });
+document.getElementById('current-year').innerHTML = currentYear;

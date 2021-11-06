@@ -1,4 +1,18 @@
 @import './_variables.scss';
+@import './_typography.scss';
+
+// <div class="projects__card">
+//   <div class="projects__card__pic"></div>
+//   <div class="projects__card__info">
+//     <div class="projects__card__info__stack">
+//       <i class="projects__card__info__stack__icon"></i>
+//     </div>
+//     <p class="projects__card__info__desc">Something Else</p>
+//   </div>
+//   <div class="projects__card__detail">
+//     <p class="projects__card__detail__text"></p>
+//   </div>
+// </div>
 
 .projects__card {
   background: linear-gradient(
@@ -11,15 +25,15 @@
     linear-gradient(
       90deg,
       transparent 45%,
-      #ffcf99 45%,
-      #ffcf99 55%,
+      $font-color 45%,
+      $font-color 55%,
       transparent 55%,
       transparent 20%,
-      #ffcf99 20%,
-      #ffcf99 30%,
+      $font-color 20%,
+      $font-color 30%,
       transparent 30%
     ),
-    linear-gradient(90deg, #ffcf99 9%, transparent 10%);
+    linear-gradient(90deg, $font-color 9%, transparent 10%);
   background-size: 3em 3em;
   background-color: #202023;
   opacity: 1;
@@ -29,12 +43,15 @@
   justify-content: center;
   align-items: center;
   margin: 25px 0px;
-  padding: 25px 15px;
+  padding: 25px;
   box-shadow: 0px 10px 13px -10px #000000, 1px 9px 13px 4px rgba(0, 0, 0, 0.33);
   &__pic {
     width: 75%;
     height: 190px;
-    background-color: $body-color;
+    background-image: url(https://images.unsplash.com/photo-1636105146585-65a51b472c7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 25px;
     border-radius: 15px;
     box-shadow: 0px 10px 13px -10px #000000,
@@ -50,41 +67,28 @@
     border-radius: 15px;
     padding: 10px;
     margin-bottom: 25px;
-    width: 60%;
+    width: 75%;
     font-family: 'Poppins', sans-serif;
     &__stack {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+
       color: $accent-color;
     }
     &__desc {
-      color: $accent-color;
+      color: $font-color;
       font-weight: 600;
-      font-size: 1.2rem;
       text-align: center;
     }
   }
   &__detail {
     background-color: $accent-color;
-    color: $body-font;
     border-radius: 15px;
     padding: 15px;
     &__text {
       color: $body-color;
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
 }
 
-// <div class="projects__card">
-//   <div class="projects__card__pic"></div>
-//   <div class="projects__card__info">
-//     <div class="projects__card__info__stack">
-//       <i class="projects__card__info__stack__icon"></i>
-//     </div>
-//     <p class="projects__card__info__desc">Something Else</p>
-//   </div>
-//   <div class="projects__card__detail">
-//     <p class="projects__card__detail__text"></p>
-//   </div>
-// </div>
+// New project card

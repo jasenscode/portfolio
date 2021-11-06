@@ -1,0 +1,108 @@
+@import './_variables.scss';
+@import './_typography.scss';
+
+.landing {
+  min-height: 100vh;
+  .landing__header {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    align-items: center;
+    &__title {
+      font-size: 4rem;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &__desc {
+      font-size: 2.25rem;
+      text-align: center;
+    }
+  }
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: $body-color;
+  padding-bottom: 50px;
+  &__cta {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+  }
+  &__btn {
+    background-color: $body-color;
+    border: none;
+    padding: 7px 9px;
+    animation: down-repeat 0.8s infinite;
+    &__arrow {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@keyframes down-repeat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing {
+    &__header {
+      padding-bottom: 0px;
+      &__title {
+        font-size: 4.5rem;
+      }
+      &__desc {
+        font-size: 2.5rem;
+      }
+    }
+    .explore {
+      &__cta {
+        font-size: 2rem;
+      }
+      &__btn {
+        .fa-angle-down {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing {
+    &__header {
+      padding-top: 120px;
+      &__title {
+        font-size: 6rem;
+      }
+      &__desc {
+        font-size: 3.5rem;
+      }
+    }
+    .explore {
+      &__cta {
+        font-size: 2.3rem;
+      }
+      &__btn {
+        .fa-angle-down {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
