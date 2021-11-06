@@ -1,0 +1,14 @@
+@import './_variables.scss';
+@import './_typography.scss';
+
+.footer {
+  background-color: $body-color;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__info {
+    color: $font-color;
+    text-align: center;
+  }
+}
