@@ -241,13 +241,10 @@ h2 {
 }
 @media screen and (min-width: 1024px) {
   .navbar__menu {
-    justify-content: space-evenly;
-    width: 50%;
-    height: auto;
-    margin: 70px auto 0px auto;
+    justify-content: center;
+    height: 4rem;
     padding: 5px 40px;
     background-color: #2b2b2d;
-    border-radius: 50px;
     transform: translateY(0);
     position: fixed;
     top: 0;
@@ -264,7 +261,7 @@ h2 {
     color: #e8e9f3;
     font-weight: 500;
     font-size: 1.2rem;
-    margin-bottom: 0px;
+    padding: 0 3rem;
   }
   .navbar__menu__item:hover {
     color: #ffcf99;
@@ -370,36 +367,43 @@ h2 {
   }
 }
 @media screen and (min-width: 768px) {
-  .landing__header {
+  .landing .landing__header {
     padding-bottom: 0px;
   }
-  .landing__header__title {
+  .landing .landing__header__title {
     font-size: 4.5rem;
   }
-  .landing__header__desc {
+  .landing .landing__header__desc {
     font-size: 2.5rem;
   }
-  .landing .explore__cta {
+
+  .explore__cta {
     font-size: 2rem;
   }
-  .landing .explore__btn .fa-angle-down {
+  .explore__btn .fa-angle-down {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 1440px) {
-  .landing__header {
-    padding-top: 120px;
-  }
-  .landing__header__title {
-    font-size: 6rem;
-  }
-  .landing__header__desc {
-    font-size: 3.5rem;
-  }
-  .landing .explore__cta {
+@media screen and (min-width: 1024px) {
+  .explore__cta {
     font-size: 2.3rem;
   }
-  .landing .explore__btn .fa-angle-down {
+}
+@media screen and (min-width: 1440px) {
+  .landing .landing__header {
+    padding-top: 150px;
+  }
+  .landing .landing__header__title {
+    font-size: 8rem;
+  }
+  .landing .landing__header__desc {
+    font-size: 2.5rem;
+  }
+
+  .explore__cta {
+    font-size: 2rem;
+  }
+  .explore__btn .fa-angle-down {
     font-size: 2rem;
   }
 }

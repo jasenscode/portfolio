@@ -83,13 +83,10 @@
 @media screen and (min-width: 1024px) {
   .navbar {
     &__menu {
-      justify-content: space-evenly;
-      width: 50%;
-      height: auto;
-      margin: 70px auto 0px auto;
+      justify-content: center;
+      height: 4rem;
       padding: 5px 40px;
       background-color: $nav-background;
-      border-radius: 50px;
       transform: translateY(0);
       position: fixed;
       top: 0;
@@ -105,7 +102,7 @@
         color: $font-color;
         font-weight: 500;
         font-size: 1.2rem;
-        margin-bottom: 0px;
+        padding: 0 3rem;
         &:hover {
           color: $accent-color;
           transition: 0.3s;
