@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     &__link {
-      font-size: 2.7rem;
+      font-size: 2.3rem;
       color: $accent-color;
     }
     &__label {
@@ -27,7 +27,7 @@
 @media screen and (min-width: 768px) {
   .contact {
     &__method__link {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     &__method__label {
       font-size: 1.2rem;
@@ -38,5 +38,11 @@
 @media screen and (min-width: 1024px) {
   .contact {
     justify-content: space-evenly;
+    &__method__link {
+      &:hover {
+        transform: translateY(-0.3rem);
+        transition: 0.2s;
+      }
+    }
   }
 }
