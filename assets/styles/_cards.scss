@@ -8,6 +8,10 @@
 //       <i class="projects__card__info__stack__icon"></i>
 //     </div>
 //     <p class="projects__card__info__desc">Something Else</p>
+//     <div>
+//       <a href="">Github</a>
+//       <a href="">Live Demo</a>
+//     </div>
 //   </div>
 //   <div class="projects__card__detail">
 //     <p class="projects__card__detail__text"></p>
@@ -47,11 +51,7 @@
   box-shadow: 0px 10px 13px -10px #000000, 1px 9px 13px 4px rgba(0, 0, 0, 0.33);
   &__pic {
     width: 100%;
-    height: 190px;
-    // background-image: url(https://images.unsplash.com/photo-1636105146585-65a51b472c7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    height: 220px;
     margin-bottom: 25px;
     border-radius: 15px;
     box-shadow: 0px 10px 13px -10px #000000,
@@ -71,14 +71,28 @@
     width: 100%;
     font-family: 'Poppins', sans-serif;
     &__stack {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: $accent-color;
     }
     &__desc {
       width: 100%;
       color: $font-color;
       font-weight: 600;
+      font-size: 1.3rem;
       text-align: center;
+    }
+    &__links {
+      padding: 0.5rem;
+      &__link {
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 0.3rem 0.5rem;
+        &:hover {
+          color: $body-color;
+          background-color: $font-color;
+          transition: 0.2s;
+        }
+      }
     }
   }
   &__detail {
@@ -88,7 +102,7 @@
     padding: 15px;
     &__text {
       color: $body-color;
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
 }
