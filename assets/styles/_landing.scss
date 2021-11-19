@@ -32,17 +32,21 @@
   height: 20vh;
   background-color: $body-color;
   padding-bottom: 50px;
-  &__cta {
-    font-size: 1.75rem;
-    margin-bottom: 10px;
-  }
   &__btn {
     background-color: $body-color;
     border: none;
     padding: 7px 9px;
-    animation: down-repeat 0.8s infinite;
+    text-align: center;
+    &__links {
+      text-decoration: none;
+    }
+    &__cta {
+      font-size: 1.75rem;
+      margin-bottom: 10px;
+    }
     &__arrow {
       font-size: 1.5rem;
+      animation: down-repeat 0.8s infinite;
     }
   }
 }
@@ -60,18 +64,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  // .landing {
-  //   .landing__header {
-  //     &__header {
-  //       padding-bottom: 0px;
-  //       &__title {
-  //         font-size: 4.5rem;
-  //       }
-  //       &__desc {
-  //         font-size: 2.5rem;
-  //       }
-  //     }
-  //   }
   .landing {
     .landing__header {
       padding-bottom: 0px;
@@ -96,30 +88,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  //   .landing {
-  //     .landing__header {
-  //       &__header {
-  //         padding-bottom: 0px;
-  //         &__title {
-  //           font-size: 4.5rem;
-  //         }
-  //         &__desc {
-  //           font-size: 2.5rem;
-  //         }
-  //       }
-  //     }
-  //     .explore {
-  //       &__cta {
-  //         font-size: 2.3rem;
-  //       }
-  //       &__btn {
-  //         .fa-angle-down {
-  //           font-size: 2rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
   .explore {
     &__cta {
       font-size: 2.3rem;
@@ -128,29 +96,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  // .landing {
-  //   .landing__header {
-  //     &__header {
-  //       padding-bottom: 0px;
-  //       &__title {
-  //         font-size: 4.5rem;
-  //       }
-  //       &__desc {
-  //         font-size: 2.5rem;
-  //       }
-  //     }
-  //   }
-  //   .explore {
-  //     &__cta {
-  //       font-size: 2.3rem;
-  //     }
-  //     &__btn {
-  //       .fa-angle-down {
-  //         font-size: 2rem;
-  //       }
-  //     }
-  //   }
-  // }
   .landing {
     .landing__header {
       padding-top: 150px;

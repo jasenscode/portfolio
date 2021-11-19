@@ -376,18 +376,22 @@ h2 {
   background-color: #202023;
   padding-bottom: 50px;
 }
-.explore__cta {
-  font-size: 1.75rem;
-  margin-bottom: 10px;
-}
 .explore__btn {
   background-color: #202023;
   border: none;
   padding: 7px 9px;
-  animation: down-repeat 0.8s infinite;
+  text-align: center;
+}
+.explore__btn__links {
+  text-decoration: none;
+}
+.explore__btn__cta {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
 }
 .explore__btn__arrow {
   font-size: 1.5rem;
+  animation: down-repeat 0.8s infinite;
 }
 
 @keyframes down-repeat {
@@ -521,7 +525,7 @@ h2 {
     min-height: 60vh;
   }
   .about__header {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .about__bio__text {
     padding-left: 25%;
