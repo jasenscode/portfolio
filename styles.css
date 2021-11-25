@@ -506,7 +506,10 @@ h2 {
 }
 @media screen and (min-width: 1024px) {
   .about {
-    min-height: 75vh;
+    padding-top: 7rem;
+  }
+  .about__bio {
+    padding: 4rem;
   }
   .about__bio__text {
     padding-left: 25%;
@@ -519,20 +522,8 @@ h2 {
   }
 }
 @media screen and (min-width: 1440px) {
-  .about {
-    min-height: 60vh;
-  }
   .about__header {
     margin-bottom: 20px;
-  }
-  .about__bio__text {
-    padding-left: 25%;
-    padding-right: 25%;
-    text-align: center;
-    line-height: 2.2rem;
-  }
-  .about__bio__text:first-of-type {
-    padding-top: 50px;
   }
 }
 h1,
@@ -631,9 +622,6 @@ h2 {
   }
 }
 @media screen and (min-width: 1024px) {
-  .skills {
-    height: auto;
-  }
   .skills__header {
     width: 50%;
     margin-bottom: 0px;
@@ -649,6 +637,7 @@ h2 {
   }
   .skills__container__item {
     width: 25%;
+    padding: 6rem;
     margin-bottom: 0px;
   }
   .skills__container__item__icon {
@@ -884,7 +873,11 @@ h2 {
 }
 @media screen and (min-width: 1024px) {
   .contact {
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  .contact__method {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .contact__method__link:hover {
     transform: translateY(-0.3rem);

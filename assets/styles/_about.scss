@@ -30,14 +30,17 @@
 
 @media screen and (min-width: 1024px) {
   .about {
-    min-height: 75vh;
-    &__bio__text {
-      padding-left: 25%;
-      padding-right: 25%;
-      text-align: center;
-      line-height: 2.2rem;
-      &:first-of-type {
-        padding-top: 50px;
+    padding-top: 7rem;
+    &__bio {
+      padding: 4rem;
+      &__text {
+        padding-left: 25%;
+        padding-right: 25%;
+        text-align: center;
+        line-height: 2.2rem;
+        &:first-of-type {
+          padding-top: 50px;
+        }
       }
     }
   }
@@ -48,15 +51,7 @@
     &__header {
       margin-bottom: 20px;
     }
-    min-height: 60vh;
     &__bio__text {
-      padding-left: 25%;
-      padding-right: 25%;
-      text-align: center;
-      line-height: 2.2rem;
-      &:first-of-type {
-        padding-top: 50px;
-      }
     }
   }
 }

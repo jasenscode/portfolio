@@ -37,11 +37,15 @@
 
 @media screen and (min-width: 1024px) {
   .contact {
-    justify-content: space-evenly;
-    &__method__link {
-      &:hover {
-        transform: translateY(-0.3rem);
-        transition: 0.2s;
+    justify-content: center;
+    &__method {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      &__link {
+        &:hover {
+          transform: translateY(-0.3rem);
+          transition: 0.2s;
+        }
       }
     }
   }
