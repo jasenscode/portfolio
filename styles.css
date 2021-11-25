@@ -342,38 +342,27 @@ h2 {
     font-size: 3.8rem;
   }
 }
-.landing {
-  min-height: 100vh;
-}
 .landing .landing__header {
-  height: 70vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 70px;
-  padding-bottom: 70px;
   align-items: center;
+}
+.landing .landing__header > * {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .landing .landing__header__title {
   font-size: 4rem;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 40px;
 }
 .landing .landing__header__desc {
-  font-size: 2.25rem;
+  font-size: 2rem;
   text-align: center;
 }
 
-.explore {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-  background-color: #202023;
-  padding-bottom: 50px;
-}
 .explore__btn {
   background-color: #202023;
   border: none;
@@ -422,7 +411,7 @@ h2 {
   }
 }
 @media screen and (min-width: 1024px) {
-  .explore__cta {
+  .explore__btn__cta {
     font-size: 2.3rem;
   }
 }
@@ -437,10 +426,10 @@ h2 {
     font-size: 2.5rem;
   }
 
-  .explore__cta {
+  .explore__btn__cta {
     font-size: 2rem;
   }
-  .explore__btn .fa-angle-down {
+  .explore__btn__arrow {
     font-size: 2rem;
   }
 }
