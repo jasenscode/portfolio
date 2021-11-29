@@ -38,9 +38,8 @@
 @media screen and (min-width: 1024px) {
   .contact {
     justify-content: center;
+    gap: 6rem;
     &__method {
-      padding-left: 3rem;
-      padding-right: 3rem;
       &__link {
         &:hover {
           transform: translateY(-0.3rem);
