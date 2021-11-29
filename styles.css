@@ -85,11 +85,7 @@ h2 {
   box-shadow: 0px 10px 13px -10px #000000, 1px 9px 13px 4px rgba(0, 0, 0, 0.33);
 }
 .projects__card__pic {
-  width: 100%;
-  height: 250px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  box-shadow: 0px 10px 13px -10px #000000, 1px 9px 13px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 15px 15px 0 0;
   overflow: hidden;
 }
 .projects__card__info {
@@ -101,15 +97,14 @@ h2 {
   padding: 0.5rem;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  color: #e8e9f3;
 }
 .projects__card__info__stack {
   font-size: 2rem;
-  color: #ffcf99;
   padding: 0 2.5rem;
   border-bottom: 1px solid #e53d00;
 }
 .projects__card__info__desc {
-  color: #e8e9f3;
   font-weight: 500;
   font-size: 1.3rem;
   text-align: center;
@@ -119,6 +114,7 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  padding: 1rem;
 }
 .projects__card__info__links__link {
   border-radius: 25px;
@@ -128,12 +124,9 @@ h2 {
   padding: 0.3rem 1.6rem;
   box-shadow: rgba(0, 0, 0, 0.49) 0px 10px 20px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
 }
-.projects__card__detail {
+.projects__card__info__detail {
   width: 100%;
-  padding: 1rem;
   text-align: center;
-}
-.projects__card__detail__text {
   margin: auto;
   color: #e8e9f3;
   font-size: 1rem;
@@ -704,9 +697,6 @@ h2 {
   .projects__card {
     width: 65%;
   }
-  .projects__card__pic {
-    height: 380px;
-  }
   .projects__card__info {
     width: 75%;
   }
@@ -717,10 +707,8 @@ h2 {
   .projects__card__info__desc {
     font-size: 1.4rem;
   }
-  .projects__card__detail {
+  .projects__card__info__detail {
     width: 75%;
-  }
-  .projects__card__detail__text {
     font-size: 1.2rem;
   }
 }
@@ -730,9 +718,6 @@ h2 {
   }
   .projects__card {
     width: 35%;
-  }
-  .projects__card__pic {
-    height: 300px;
   }
   .projects__card__info {
     width: 100%;
@@ -747,12 +732,10 @@ h2 {
     background-color: transparent;
     box-shadow: 0 1px 1px rgba(9, 30, 66, 0.25), 0 0 9px 1px #ffcf99;
     color: #e8e9f3;
-    transition: 0.2s;
+    transition: 0.3s;
   }
-  .projects__card__detail {
+  .projects__card__info__detail {
     width: 100%;
-  }
-  .projects__card__detail__text {
     font-size: 1rem;
   }
 }
@@ -766,9 +749,6 @@ h2 {
   }
   .projects__card {
     width: 40%;
-  }
-  .projects__pic {
-    height: 350px;
   }
   .projects__info {
     width: 70%;
