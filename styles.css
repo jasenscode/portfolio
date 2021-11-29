@@ -94,7 +94,7 @@ h2 {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   width: 100%;
   font-family: "Poppins", sans-serif;
   color: #e8e9f3;
@@ -115,6 +115,7 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
+  gap: 2rem;
 }
 .projects__card__info__links__link {
   border-radius: 25px;
@@ -717,7 +718,7 @@ h2 {
     justify-content: space-between;
   }
   .projects__card {
-    width: 35%;
+    width: 40%;
   }
   .projects__card__info {
     width: 100%;
@@ -741,14 +742,10 @@ h2 {
 }
 @media screen and (min-width: 1024px) and (min-width: 1440px) {
   .projects__card-container {
-    justify-content: space-between;
     padding-left: 25%;
     padding-right: 25%;
     margin-top: 50px;
     gap: 1rem;
-  }
-  .projects__card {
-    width: 40%;
   }
   .projects__info {
     width: 70%;

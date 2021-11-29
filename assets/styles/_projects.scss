@@ -57,7 +57,7 @@
       justify-content: space-between;
     }
     &__card {
-      width: 35%;
+      width: 40%;
       &__info {
         width: 100%;
         &__stack__icon {
@@ -86,14 +86,10 @@
   @media screen and (min-width: 1440px) {
     .projects {
       &__card-container {
-        justify-content: space-between;
         padding-left: 25%;
         padding-right: 25%;
         margin-top: 50px;
         gap: 1rem;
-      }
-      &__card {
-        width: 40%;
       }
       &__info {
         width: 70%;
