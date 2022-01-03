@@ -283,7 +283,7 @@ h2 {
   .navbar__menu {
     justify-content: center;
     height: 3rem;
-    padding: 5px 40px;
+    padding: 2rem 3rem;
     background-color: #2b2b2d;
     transform: translateY(0);
     position: fixed;

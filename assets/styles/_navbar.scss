@@ -69,11 +69,9 @@
     &__hamburger {
       margin: 50px;
       & .closeIcon {
-        // padding: 4px 10px;
         font-size: 3.5rem;
       }
       & .menuIcon {
-        // padding: 7px 10px;
         font-size: 3.5rem;
       }
     }
@@ -85,7 +83,7 @@
     &__menu {
       justify-content: center;
       height: 3rem;
-      padding: 5px 40px;
+      padding: 2rem 3rem;
       background-color: $nav-background;
       transform: translateY(0);
       position: fixed;
