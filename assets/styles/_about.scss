@@ -8,7 +8,6 @@
     margin-bottom: 50px;
   }
   &__bio__text {
-    text-align: center;
     line-height: 2.2rem;
   }
   &__bio__text:not(:last-of-type) {
@@ -32,11 +31,10 @@
   .about {
     padding-top: 7rem;
     &__bio {
-      padding: 4rem;
+      padding: 2rem;
       &__text {
         padding-left: 25%;
         padding-right: 25%;
-        text-align: center;
         line-height: 2.2rem;
         &:first-of-type {
           padding-top: 50px;
@@ -50,8 +48,6 @@
   .about {
     &__header {
       margin-bottom: 20px;
-    }
-    &__bio__text {
     }
   }
 }
