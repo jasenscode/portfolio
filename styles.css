@@ -36,6 +36,11 @@ h2 {
     font-size: 3.8rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
 h1,
 h2,
 h3,
@@ -72,6 +77,11 @@ h2 {
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 3.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 5rem;
   }
 }
 .projects__card {
@@ -192,6 +202,11 @@ h2 {
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 3.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 5rem;
   }
 }
 .navbar__menu {
@@ -334,6 +349,11 @@ h2 {
     font-size: 3.8rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
 .landing .landing__header {
   height: 100vh;
   display: flex;
@@ -463,6 +483,11 @@ h2 {
     font-size: 3.8rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
 .about__header {
   width: 50%;
   margin: auto;
@@ -495,6 +520,7 @@ h2 {
     padding-left: 25%;
     padding-right: 25%;
     line-height: 2.2rem;
+    font-size: 1.4rem;
   }
   .about__bio__text:first-of-type {
     padding-top: 50px;
@@ -541,6 +567,11 @@ h2 {
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 3.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 5rem;
   }
 }
 .projects .fa-react {
@@ -627,6 +658,9 @@ h2 {
     transform: scale(1.1);
     transition: 0.2s;
   }
+  .skills__container__item__desc {
+    font-size: 1.6rem;
+  }
 }
 h1,
 h2,
@@ -664,6 +698,11 @@ h2 {
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 3.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 5rem;
   }
 }
 .projects__header {
@@ -797,6 +836,11 @@ h2 {
     font-size: 3.8rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
 .contact {
   background-color: #202023;
   display: flex;
@@ -874,6 +918,11 @@ h2 {
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 3.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 5rem;
   }
 }
 .footer {
